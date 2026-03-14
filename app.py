@@ -165,24 +165,3 @@ def vouch_bulk():
     except Exception as ex:
         return jsonify({"success": False, "message": str(ex)})
 ```
-
----
-
-## After pasting — also do these 3 things:
-
-**1. requirements.txt** — make sure it is just these 4 lines, nothing else:
-```
-flask
-flask-cors
-requests
-gunicorn
-```
-
-**2. runtime.txt** — make sure it exists with just:
-```
-python-3.11.0
-```
-
-**3. Render → Settings → Start Command** — set to just:
-```
-gunicorn app:app
