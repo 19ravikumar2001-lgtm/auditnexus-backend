@@ -228,10 +228,3 @@ if __name__ == "__main__":
 ```
 
 ---
-
-# FILE 2 — requirements.txt
-```
-flask==3.0.3
-flask-cors==4.0.1
-requests==2.32.3
-gunicorn==22.0.0
